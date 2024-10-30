@@ -14,7 +14,6 @@ output_file=/tmp/filesize.txt
 # Introduction
 echo "This program ($0) retrieves top $file_amount largest files in $1 as $output_file."
 
-
 # Print path
 echo "Given path: $path"
 
