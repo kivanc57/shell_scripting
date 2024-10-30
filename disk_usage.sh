@@ -6,8 +6,8 @@ read -p "Enter the path or name of the folder you want to check: " disk_path
 echo "Checking disk usage for $disk_path..."
 disk_info=$(df -h | grep -w "$disk_path")
 
-# Check if the disk exists
-if [ -z "$disk_info" ]; then
+# Check if the disk is provided and it exists
+if [ -z "$disk_info" || ! -d "$disk_info"]; then
   echo "Invalid path or folder name. Please check the input and try again."
   exit 1
 fi
