@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Check if the script is run with root privileges
+if [[ $(id -u) -ne 0 ]]; then
+    echo "Please run as root or with sudo privileges..."
+    exit 1
+fi
+
 # Function to get the Linux distribution and install a package
 get_linux_distro() {
     local package_name="$1"
@@ -16,14 +22,19 @@ get_linux_distro() {
     fi
 }
 
-# Main script starts here...
+# Prompt the user to enter the package name
+read -p "Enter the package name: " package_name
+
+# Check if the package name was provided
+if [[ -z "$package_name" ]]; then
+    echo "Please provide a package name to proceed..."
+    exit 2
+fi
+
 # Detect the current operating system
 current_os="$(uname -s)"
 
-# Read the package name from user to install
-read -p "Enter the package name: " package_name
-
-# Handle different OS
+# Handle installation for different OS
 case "$current_os" in
     Linux)     
         get_linux_distro "$package_name"
@@ -50,4 +61,3 @@ case "$current_os" in
         echo "Unsupported operating system."
         ;;
 esac
-
