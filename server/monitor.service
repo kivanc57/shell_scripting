@@ -1,0 +1,16 @@
+[Unit]
+Description=Disk Monitoring Service
+Documentation=https://github.com/kivanc57/shell_scripting
+
+[Service]
+Type=simple
+User=root
+Group=root
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=30s
+ExecStart=/home/your_username/server_disk_monitor.sh
+SyslogIdentifier=DiskUtilization
+
+[Install]
+WantedBy=multi-user.target
