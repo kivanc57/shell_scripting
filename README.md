@@ -28,7 +28,7 @@ The *main purpose* of this project is to provide a collection of reusable script
 - [License](#license)
 - [Contact](#contact)
 
-## 🤖 Installation
+## 🤖 Installation <a id="installation"></a>
 
 To get started, clone the repository to your local machine:
 
@@ -37,7 +37,7 @@ git clone https://github.com/kivanc57/utility_scripting_collection
 cd utility_scripting_collection
 ```
 
-## 🐧 Usage
+## 🐧 Usage <a id="usage"></a>
 To use any of the scripts, navigate to the script's directory and execute it. For example:
 
 ```bash
@@ -47,7 +47,7 @@ chmod +x your_script.sh
 
 Make sure to follow any specific instructions included in the comments of each script.
 
-## 🧙🏽‍♂️ Scripts Overview
+## 🧙🏽‍♂️ Scripts Overview <a id="scripts_overview"></a>
 Below is a brief overview of the available scripts in this repository:
 
 ### 1. Log Archiver 💯
@@ -107,15 +107,15 @@ Below is a brief overview of the available scripts in this repository:
 - **Filename**: `monitor.service`  
 - **Description**: A systemd service configuration to run the `server_disk_monitor.sh` script as a service.
 
-## Contributing 🤩
+## Contributing 🤩 <a id="contributing"></a>
 Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
-## License ✏️
-This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details.
+## License ✏️ <a id="license"></a>
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](https://github.com/kivanc57/utility_scripting_collection/blob/main/LICENSE) file for details.
 
-## Contact ✉
+## Contact ✉ <a id="contact"></a>
 
-For any inquiries or contributions, please feel free to reach out. You can find the license information [here](https://github.com/kivanc57/utility_scripting_collection/blob/main/LICENSE).
+For any inquiries or contributions, please feel free to reach out.
 
 - **GitHub Profile**: [kivanc57](https://github.com/kivanc57)
 - **Email**: [kivancgordu@hotmail.com](mailto:kivancgordu@hotmail.com)
