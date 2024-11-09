@@ -47,7 +47,7 @@ chmod +x your_script.sh
 
 Make sure to follow any specific instructions included in the comments of each script.
 
-## 🧙🏽‍♂️ Scripts Overview <a id="scripts_overview"></a>
+## 🧙🏽‍♂️ Scripts Overview <a id="scripts-overview"></a>
 Below is a brief overview of the available scripts in this repository:
 
 ### 1. Log Archiver 💯
